@@ -216,8 +216,6 @@
 
 
 
-
-
 // const users = [
 //   {name:"A", age:20},
 //   {name:"B", age:21},
@@ -350,22 +348,32 @@
 
 
 
+// function debounce(fn,dely){
+//     let timer;
+//     return function(){
+//         clearTimeout(timer);
+//         timer = setTimeout(()=>{
+//              fn()
+//         },dely)
+//     }
+// }
+
+
+
+// const debouncedFn = debounce(() => {
+//   console.log("Called");
+// }, 1000);
+
+// debouncedFn();
+// debouncedFn();
+// debouncedFn();
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
 
 
