@@ -83,53 +83,53 @@ function isBalancedParenthesis(str) {
 
 
 
-// let arr =[1,2,3,4,5,6]
+let arr =[1,2,3,4,5,6]
 
 
-// function swapMiddleTwo(stack){
-//     let n = stack.length;
-//     let midCount = Math.floor(n/2)-1;
-//     let temp =[];
+function swapMiddleTwo(stack){
+    let n = stack.length;
+    let midCount = Math.floor(n/2)-1;
+    let temp =[];
 
-//     for(let i=0;i<midCount;i++){
-//         temp.push(stack.pop())
-//     }
+    for(let i=0;i<midCount;i++){
+        temp.push(stack.pop())
+    }
 
-//     let mid1= stack.pop();
-//     let mid2= stack.pop();
+    let mid1= stack.pop();
+    let mid2= stack.pop();
 
-//     stack.push(mid1);
-//     stack.push(mid2);
+    stack.push(mid1);
+    stack.push(mid2);
 
-//     while(temp.length){
-//         stack.push(temp.pop())
-//     }
+    while(temp.length){
+        stack.push(temp.pop())
+    }
 
-//     return stack
-// }
-
-
-// console.log(swapMiddleTwo(arr));
+    return stack
+}
 
 
+console.log(swapMiddleTwo(arr));
 
 
 
-// function warmerTemperature(arr){
-//     let result = new Array(arr.length).fill(0);
-//     let stack = [];
 
-//     for(let i = 0; i < arr.length; i++){
 
-//         while(stack.length > 0 && arr[i] > arr[stack[stack.length - 1]]){
-//             let index = stack.pop();
-//             result[index] = i - index;
-//         }
+function warmerTemperature(arr){
+    let result = new Array(arr.length).fill(0);
+    let stack = [];
 
-//         stack.push(i);
-//     }
+    for(let i = 0; i < arr.length; i++){
 
-//     return result;
-// }
+        while(stack.length > 0 && arr[i] > arr[stack[stack.length - 1]]){
+            let index = stack.pop();
+            result[index] = i - index;
+        }
 
-// console.log(warmerTemperature([73,74,75,71,69,72,76,73]));
+        stack.push(i);
+    }
+
+    return result;
+}
+
+console.log(warmerTemperature([73,74,75,71,69,72,76,73]));

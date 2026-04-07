@@ -233,6 +233,19 @@
     }
 
 
+    reversemid(){
+        if(!this.head) return;
+        let fast=this.head;
+        let slow=this.head;
+        let prev=null;
+        while(fast.next && fast.next.next){
+            fast=fast.next.next;
+            prev=slow
+            slow=slow.next
+        }
+        slowNext=slow.next;
+        [prev.value,slowNext.value]=[slowNext.value,prev.value]
+    }
 
 
  }

@@ -9,8 +9,6 @@ class HashTable{
         this.count=0
     }
 
-
-
     _hash(key){
         let index = 0;
         for(let i=0;i<key.length;i++){

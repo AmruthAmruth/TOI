@@ -2,20 +2,20 @@
 
 
 
-// function findMaxSum(arr,k){
-//     let sum = 0;
-//     for(let i=0;i<k;i++){
-//         sum+=arr[i]
-//     }
-//     let max=sum
-//     for(let i=k;i<arr.length;i++){
-//             sum=sum-arr[i-k]+arr[i];
-//             max=Math.max(sum,max)
-//     }
-//     return max
-// }
+function findMaxSum(arr,k){
+    let sum = 0;
+    for(let i=0;i<k;i++){
+        sum+=arr[i]
+    }
+    let max=sum
+    for(let i=k;i<arr.length;i++){
+            sum=sum-arr[i-k]+arr[i];
+            max=Math.max(sum,max)
+    }
+    return max
+}
 
-// console.log(findMaxSum([1,2,3,4,5,6],2));
+console.log(findMaxSum([1,2,3,4,5,6],2));
 
 
 

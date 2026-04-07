@@ -176,7 +176,7 @@ const products = {
 console.log("8:", sumOfProducts(products));
 // Output: 40
 
-
+``
 
 /*************************************************
  * 🔹 9. COUNT FREQUENCY
@@ -380,3 +380,29 @@ const debouncedFn = debounce(() => {
 debouncedFn();
 debouncedFn();
 debouncedFn(); // Only this runs 
+
+
+
+
+
+let str="aaeeeeeeedb"
+
+
+function freqCount(str){
+  let map={};
+  for(let char of str){
+    map[char]=(map[char]||0)+1
+  }
+  let result="";
+  for(let key in map){
+    result+=key+map[key]
+  }
+
+return result
+
+}
+
+
+
+
+console.log(freqCount(str));
