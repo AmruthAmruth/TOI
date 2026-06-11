@@ -31,7 +31,7 @@ user2.greet();
  *********************************************************************/
 
 function userFactory(name) {
-    let score = 0; // private variable
+    let score = 0;
 
     return {
         getName() {

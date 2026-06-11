@@ -87,7 +87,7 @@ function selectionSort(arr) {
 // Stable: ✅ Yes
 // ============================================================
 
-function insertionSort(arr) {
+function insertionSort(arr) { 
 
     for (let i = 1; i < arr.length; i++) {
         let key = arr[i];
@@ -107,7 +107,7 @@ function insertionSort(arr) {
 
 
 // ============================================================
-// 4️⃣ Merge Sort (Divide and Conquer)
+// 4️⃣Merge Sort (Divide and Conquer)
 //
 // Time Complexity:
 //   Worst: O(n log n)

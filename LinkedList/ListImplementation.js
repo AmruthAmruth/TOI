@@ -45,7 +45,7 @@
         const newNode = new Node(value);
         if(!this.head){
             this.head=newNode;
-            retSharjah - United Arab Emiratesurn
+
         }
         newNode.next=this.head;
         this.head=newNode
@@ -246,6 +246,34 @@
         slowNext=slow.next;
         [prev.value,slowNext.value]=[slowNext.value,prev.value]
     }
+
+
+    swapMid(){
+    if(!this.head || !this.head.next) return;
+
+    let fast = this.head;
+    let firstMid = this.head;
+    let prev = null;
+
+    // find middle
+    while(fast && fast.next){
+        prev = firstMid;
+        firstMid = firstMid.next;
+        fast = fast.next.next;
+    }
+
+    let secondMid = firstMid.next;
+
+    // safety check
+    if(!prev || !secondMid) return;
+
+    let after = secondMid.next;   // ✅ save this first
+
+    // swap
+    prev.next = secondMid;
+    secondMid.next = firstMid;
+    firstMid.next = after;
+}
 
 
  }
