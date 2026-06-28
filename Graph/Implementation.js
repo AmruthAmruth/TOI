@@ -5,7 +5,7 @@ class Graph{
     }
 
 
-    addVertex(vertex){
+    addVe1rtex(vertex){
         if(!this.list[vertex]){
             this.list[vertex]=[]
         }
